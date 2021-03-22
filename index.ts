@@ -63,6 +63,11 @@ const allowedTags = [
   'tr',
 ].sort();
 
+const transformTags = {
+  figure: 'h3',
+  blockquote: 'bq',
+};
+
 fs.readFile(`./dirty/${process.env.INPUT}.html`, 'utf8', (err, data) => {
   if (err) {
     return console.log(err);
@@ -70,10 +75,7 @@ fs.readFile(`./dirty/${process.env.INPUT}.html`, 'utf8', (err, data) => {
   fs.writeFile(
     `./clean/${process.env.INPUT}.html`,
     sanitizeHtml(data, {
-      transformTags: {
-        figure: 'h3',
-        blockquote: 'bq',
-      },
+      transformTags,
       allowedTags,
     }),
     () => {}

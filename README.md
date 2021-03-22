@@ -1,5 +1,6 @@
 # RUNNING THE PARSER
 
+* Run ```npm i -g ts-node```.
 * Run ```npm i```.
 * Run ```INPUT=filename npm run clean```.
 * Example: ```INPUT=sample1 npm run clean```.
