@@ -1,0 +1,4 @@
+node_modules
+dirty
+!dirty/sample1.html
+clean

@@ -1,0 +1,16 @@
+{
+  "name": "syndication-clean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/sanitize-html": "^1.27.1",
+    "sanitize-html": "^2.3.3"
+  }
+}
