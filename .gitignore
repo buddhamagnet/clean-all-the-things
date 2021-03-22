@@ -1,4 +1,4 @@
 node_modules
-dirty
+dirty/*html
 !dirty/sample1.html
 clean
